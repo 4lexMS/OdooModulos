@@ -10,5 +10,5 @@ class vehiculos(models.Model):
     nombre = fields.Char()
     modelo = fields.Char()
     placa = fields.Char()
-    chofer = fields.Char()
-    anio = fields.Char()
+    chofer = fields.Many2one('hr.employee', string='Employee', tracking=True)
+    anio = fields.Char(string="Año")

@@ -20,9 +20,9 @@
     <!-- actions opening views on models -->
 
     <record model="ir.actions.act_window" id="vehiculos.action_window">
-      <field name="name">vehiculos window</field>
+      <field name="name">VEHICULOS INCUPASAJE</field>
       <field name="res_model">vehiculos.vehiculos</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">tree,form,kanban</field>
     </record>
 
 
@@ -48,11 +48,11 @@
 
     <!-- menu categories -->
 
-    <menuitem name="Menu 1" id="vehiculos.menu_1" parent="vehiculos.menu_root"/>
+    <menuitem name="Flota" id="vehiculos.menu_1" parent="vehiculos.menu_root"/>
 
     <!-- actions -->
 
-    <menuitem name="List" id="vehiculos.menu_1_list" parent="vehiculos.menu_1"
+    <menuitem name="Lista vehículos" id="vehiculos.menu_1_list" parent="vehiculos.menu_1"
               action="vehiculos.action_window"/>
 
   </data>
